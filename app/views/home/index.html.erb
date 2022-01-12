@@ -1,0 +1,5 @@
+<%= form_with(url: home_show_path, method: "get") do |form| %>
+  <%= form.label :username, "Search for username:" %>
+  <%= form.text_field :username %>
+  <%= form.submit "Search" %>
+<% end %>

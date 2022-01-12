@@ -1,0 +1,20 @@
+<% if @user_details[:status] == 'Error' %>
+  <h2>User Not found</h2>
+<% else %>
+  <table>
+    <tr>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Planet</th>
+      <th>Species</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td><%= @user_details[:age] %></td>
+      <td><%= @user_details[:gender] %></td>
+      <td><%= @user_details[:planet] %></td>
+      <td><%= @user_details[:species] %></td>
+      <td><%= @user_details[:status] %></td>
+    </tr>
+  </table>
+<% end %>
